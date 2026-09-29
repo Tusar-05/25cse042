@@ -97,3 +97,8 @@ from employee e, Dept d where e.dept_no=d.dept_no;
 select e.emp_id,e.e_name,e.sal,s.grade
 from employee e, salgrade s where e.sal
 between s.losal and s.hisal;
+
+select e.e_name as Employee_name , m.e_name
+as Manager_Name
+from employee e left join employee m 
+on e.mgr = m.emp_id;
