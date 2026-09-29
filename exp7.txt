@@ -102,3 +102,6 @@ select e.e_name as Employee_name , m.e_name
 as Manager_Name
 from employee e left join employee m 
 on e.mgr = m.emp_id;
+
+select e.emp_id, e.e_name,d.dept_no,d.dept_name
+from employee e cross join Dept d;
