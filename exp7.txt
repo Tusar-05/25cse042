@@ -93,3 +93,7 @@ select * from areas;
 // next edited 
 select e.emp_id,e.e_name,d.dept_name,d.loc
 from employee e, Dept d where e.dept_no=d.dept_no;
+
+select e.emp_id,e.e_name,e.sal,s.grade
+from employee e, salgrade s where e.sal
+between s.losal and s.hisal;
