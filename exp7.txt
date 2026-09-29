@@ -105,3 +105,7 @@ on e.mgr = m.emp_id;
 
 select e.emp_id, e.e_name,d.dept_no,d.dept_name
 from employee e cross join Dept d;
+
+select e.emp_id , e.e_name , d.dept_no, d.loc
+from employee e left join Dept d
+on e.dept.no = d.dept_no;
