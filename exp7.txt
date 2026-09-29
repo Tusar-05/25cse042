@@ -87,3 +87,9 @@ VALUES
 (4, 'WEST', 'MUMBAI');
 
 select * from areas;
+
+
+
+// next edited 
+select e.emp_id,e.e_name,d.dept_name,d.loc
+from employee e, Dept d where e.dept_no=d.dept_no;
