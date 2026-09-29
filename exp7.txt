@@ -122,5 +122,8 @@ select e.emp_id , e.e_name , d.dept_no, d.loc
 from employee e right join Dept d
 on e.dept_no = d.dept_no;
 
+select e.* , d.* from employee e inner join Dept d 
+on e.dept_no = d.dept_no;
+
 
 
